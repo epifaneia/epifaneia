@@ -1,5 +1,7 @@
 # Daniel Martín · Epifaneia
 
+**AI Engineer (Python) · Seville or remote · available now** · [CV (PDF)](https://epifaneia.dev/cv/Daniel_Martin_AI_Engineer_EN.pdf) · [epifaneia.dev](https://epifaneia.dev)
+
 **AI carries risk. Code bounds it. The standard answers for what remains.**
 *La IA tiene riesgos. El código los acota. La norma responde de lo que queda.*
 
@@ -21,9 +23,10 @@ Every AI application has five steps. Only one invokes a model; the other four ar
 | [feasibility-study](https://github.com/epifaneia/feasibility-study) | Full stack: from a meeting form to an AI feasibility study in PDF. An autonomous research run across hundreds of pages, turned by code into a report with our narrative and our order, with cited sources. Human review before anything is sent. | QA warnings per lead · report reproducible from `extraccion.json` |
 | [askhub](https://github.com/epifaneia/askhub) | Ask your whole workspace in plain language: Discord and Trello over their APIs, a single-file local index, minutes transcribed locally, and a bot that answers the state of every project on the spot. | 0 € to run · tests without network |
 | [neuralib](https://github.com/epifaneia/neuralib) | My 2023 bootcamp Django library, rewritten: 300 public-domain books with search by meaning (pgvector) and a librarian that only recommends from the catalog, quoting the line that backs it; code checks the quote exists. | expected book in the top 5 for 34/34 hand-written questions · 81 tests in CI |
-| [mildew](https://github.com/epifaneia/mildew) | My 2024 cherry leaf classifier (CNN in Keras), rescued: I found and closed two train/test leaks (1,393 duplicated images, augmentation before the split). Three notebooks saved with their outputs and a Streamlit app. | 879/879 on a leak-free test set · near duplicates checked in the notebook |
+| [mildew](https://github.com/epifaneia/mildew) | My 2024 cherry leaf classifier (CNN in Keras), rescued: I found and closed two train/test leaks (1,393 duplicated images, augmentation before the split). Three notebooks saved with their outputs and a Streamlit app you can [try in the browser](https://mildew-8ygp4es5aitvvhp8buud32.streamlit.app). | 879/879 on a leak-free test set · near duplicates checked in the notebook |
 | [cv](https://github.com/epifaneia/cv) | The CV as a pipeline: data, template, one-page PDF in Spanish and English. | one page, checked on every build |
+| [nogum](https://github.com/epifaneia/nogum) | My tabletop role-playing game, years in the making: a compiler for a bilingual 210-page manual and the web app that configures a game from it. Deterministic gates stop the build when the book and the data stop saying the same thing. [Read it](https://epifaneia.dev/nogum/). | 189 design decisions traced · Appendix B: 56 rows, 0 discrepancies |
 
-Every repository ships with a **Security & regulation** section and an integration contract: who runs it, what gets recorded, who signs. See `docs/INTEGRATION.md` in any of them.
+Every repository has a **Security & regulation** section. The AI pipelines (ctsm, reqif-extractor, feasibility-study, askhub and toolkit) also ship an integration contract, `docs/INTEGRATION.md`: who runs it, what gets recorded, who signs.
 
 [epifaneia.dev](https://epifaneia.dev) · danielmartin@epifaneia.dev · [LinkedIn](https://www.linkedin.com/in/epifaneia/)
