@@ -7,12 +7,14 @@
 
 I design AI solutions for regulated processes: documents that arrive dirty, requirements that must be checked against thousand-page manuals, files that a third-party system has to accept on the first attempt. Local models by default, measured numbers, written limitations.
 
-Every AI application has five steps. Only one invokes a model; the other four are code.
+**The design formula.** Before writing any code, I lay out a process in five steps. Only step 4 is a place for a model; the other four are code.
 
 ```
  1 CLEANING      2 CONTEXT       3 INPUT GUARDRAIL   4 PROCESS        5 OUTPUT GUARDRAIL
  ■ code          ■ code          ■ code              ▲ model          ■ code
 ```
+
+Its main use is deciding **whether an AI app is needed at all**. If step 4 can be done by a rule, a query or a twenty-question tree, there is no model, and the result is cheaper, faster and auditable. If it cannot, because someone has to read a half-written email or a thousand-page manual, the model gets that one narrow job and code checks what it returns.
 
 | Repository | What it does | Measured |
 |---|---|---|
@@ -28,6 +30,6 @@ Every AI application has five steps. Only one invokes a model; the other four ar
 | [cv](https://github.com/epifaneia/cv) | The CV as a pipeline: data, template, one-page PDF in Spanish and English. | one page, checked on every build |
 | [nogum](https://github.com/epifaneia/nogum) | My tabletop role-playing game, years in the making: a compiler for a bilingual manual of more than 200 pages and the web app that configures a game from it. Deterministic gates stop the build when the book and the data stop saying the same thing. [Read it](https://epifaneia.dev/nogum/). | 189 design decisions traced · Appendix B: 56 rows, 0 discrepancies |
 
-Every repository has a **Security & regulation** section. The AI pipelines (ctsm, reqif-extractor, feasibility-study, askhub and toolkit) also ship an integration contract, `docs/INTEGRATION.md`: who runs it, what gets recorded, who signs.
+The AI pipelines (ctsm, reqif-extractor, ordena, feasibility-study, askhub, toolkit and neuralib) each have a **Security & regulation** section, and five of them (ctsm, reqif-extractor, feasibility-study, askhub and toolkit) ship an integration contract, `docs/INTEGRATION.md`: who runs it, what gets recorded, who signs.
 
-[epifaneia.dev](https://epifaneia.dev) · danielmartin@epifaneia.dev · [LinkedIn](https://www.linkedin.com/in/epifaneia/)
+[epifaneia.dev](https://epifaneia.dev) · danielmartin@epifaneia.dev · [LinkedIn](https://www.linkedin.com/in/epifaneia/) · [YouTube](https://www.youtube.com/@epifaneiadev)
